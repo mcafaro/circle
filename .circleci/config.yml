@@ -10,4 +10,7 @@ jobs:
       - matlab/install
       - matlab/run-command:
           command: myscript
-workflows: null
+workflows:
+  build:
+    jobs:
+      - build
